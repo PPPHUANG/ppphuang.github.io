@@ -3,7 +3,7 @@ layout: post
 title: "Windows定时任务"
 date: 2017-10-30
 description: "Windows定时任务"
-tag: Swoole
+tag: Windows
 
 ---
 ### 1.准备需要执行的文件（PHP文件为例）
@@ -38,3 +38,4 @@ E:\wamp64\bin\php\php7.0.10\php.exe -q C:\Users\abc\Desktop\autocheck.php
 ![](/images/posts/Windows/tianjiacaozuo2.jpg)
 ### 点击确认所有操作完成之后，在任务列表里可以查看到刚刚自定义的定时任务,到了指定的时间指定的程序就会被运行
 ![](/images/posts/Windows/renwuliebiao.jpg)
+其中还有其他的更多自定义操作设置可以自行摸索
