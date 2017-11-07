@@ -38,4 +38,7 @@ E:\wamp64\bin\php\php7.0.10\php.exe -q C:\Users\abc\Desktop\autocheck.php
 ![](/images/posts/Windows/tianjiacaozuo2.jpg)
 ### 点击确认所有操作完成之后，在任务列表里可以查看到刚刚自定义的定时任务,到了指定的时间指定的程序就会被运行
 ![](/images/posts/Windows/renwuliebiao.jpg)
-其中还有其他的更多自定义操作设置可以自行摸索
+### 注意：
+1. 电脑不能自动睡眠 自动睡眠之后自动任务是不会执行的
+2. 查看自动任务的触发器是否开启
+3. 其中还有其他的更多自定义操作设置可以自行摸索
