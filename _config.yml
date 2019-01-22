@@ -1,6 +1,6 @@
 # Basic
 title: PPPHUANG
-subtitle: <?php echo 'Hellow Word!'; ?>
+subtitle: "<?php echo 'Hellow Word!'; ?>"
 description: 遇事须上虎背~
 # 头像里面的标题
 avatarTitle: PPPHUANG
