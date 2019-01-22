@@ -1,11 +1,9 @@
-
 ---
 layout: post
 title: "vscode keymap"
 date: 2019-01-22
-description: "vscode mac 快捷键"
+description: "vscode mac快捷键"
 tag: 工具
-
 ---
 
 ### 全局
