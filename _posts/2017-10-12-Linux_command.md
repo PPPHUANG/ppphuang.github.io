@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Linux 常用命令"
+date: 2017-08-24
+description: "Linux 常用命令"
+tag: ubantu
+---
 ### 开关机
 ```
 shutdown
