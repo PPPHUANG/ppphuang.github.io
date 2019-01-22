@@ -11,7 +11,7 @@ title: 关于我
 我一直在进步。
 <p>
 所在公司
-<a target="_blank" href="https://www.datatom.com/"> 德拓  </a>
+<a target="_blank" href="http://www.datatom.com/"> 德拓  </a>
 致力于快速增长的非结构化数据管理领域技术与产品的研究、开发、生产、销售及服务。
 <p>
 
