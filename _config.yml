@@ -1,6 +1,6 @@
 # Basic
-title: 黄鹏
-subtitle: 个人站
+title: PPPHUANG
+subtitle: <?php echo 'Hellow Word!'; ?>
 description: 遇事须上虎背~
 # 头像里面的标题
 avatarTitle: PPPHUANG
