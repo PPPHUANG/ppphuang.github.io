@@ -62,4 +62,84 @@ git checkout HEAD <filename>
 ```
 git revert <commitID>
 ```
+### 选择commit
+```
+git cherry-pick <commitID>
+```
+### 可以把本地未push的分叉提交历史整理成直线
+```
+git rebase
+```
+### 汇合commit
+```
+git rebase -i HEAD~~
+```
+打开文本编辑器，将看到从HEAD到HEAD~~的提交如下图显示。
+```
+pick 9a54fd4 添加commit的说明
+pick 0d4a808 添加pull的说明
 
+# Rebase 326fc9f..0d4a808 onto d286baa
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+将第二行的`“pick”`改成`“squash”`，然后保存并退出。由于合并后要提交，所以接着会显示提交信息的编辑器，请编辑信息后保存并退出。
+### 修改commit
+```
+git rebase -i HEAD~~
+```
+打开文本编辑器，将看到从HEAD到HEAD~~的提交如下图显示。
+```
+pick 9a54fd4 添加commit的说明
+pick 0d4a808 添加pull的说明
+
+# Rebase 326fc9f..0d4a808 onto d286baa
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+将第一行的`“pick”`改成`“edit”`，然后保存并退出。将会显示以下内容，修改过的提交呈现退出状态。
+```
+Stopped at d286baa... 添加commit的说明
+You can amend the commit now, with
+
+        git commit --amend
+
+Once you are satisfied with your changes, run
+
+        git rebase --continue
+```
+打开sample.txt，适当地修改“commit的讲解”部分。
+```
+add 把变更录入到索引中
+commit 记录索引的状态
+pull 取得远端的内容
+```
+用commit --amend保存修改。
+```
+$ git add sample.txt
+$ git commit --amend
+```
+现在已经commit，但是rebase操作还没结束。若要通知这个提交的操作已经结束，请指定 --continue选项执行rebase。
+```
+$ git rebase --continue
+```
